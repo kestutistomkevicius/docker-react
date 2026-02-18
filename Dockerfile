@@ -7,5 +7,5 @@ RUN npm run build
 
 FROM nginx:alpine
 COPY --from=builder /app/build /usr/share/nginx/html
-#EXPOSE 80
-
+# needed for AWS Elastic Beanstalk to detect the container is running
+EXPOSE 80 
