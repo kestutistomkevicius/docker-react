@@ -2,7 +2,7 @@ name: Deploy Frontend
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:  # Add this to enable manual triggering
 
 jobs:
